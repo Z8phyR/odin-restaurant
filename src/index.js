@@ -3,5 +3,5 @@ import { navBar } from "./navbar";
 import { homePage } from "./home";
 
 navBar();
-// homePage();
+homePage();
 console.log("Home Page Loaded");
