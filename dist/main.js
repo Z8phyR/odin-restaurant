@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=document.querySelector("#content");!function(){const t=document.createElement("div");t.classList.add("home-page"),t.textContent="Welcome to the Main Page",e.appendChild(t)}(),console.log("Home Page Loaded")})();
