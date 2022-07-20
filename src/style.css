@@ -26,3 +26,9 @@
 body {
     background-color: aqua;
 }
+
+.home-page {
+    background-color: beige;
+    display: flex;
+    
+}

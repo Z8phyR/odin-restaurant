@@ -1,5 +1,5 @@
 import './style.css';
-import { navBar } from "./home";
+import { navBar } from "./navbar";
 import { homePage } from "./home";
 
 navBar();
