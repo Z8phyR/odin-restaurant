@@ -11,7 +11,7 @@ function homePage() {
         const introDiv = document.createElement('div');
         const introP = document.createElement('p');
         introP.classList.add('intro-text');
-        introP.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam explicabo voluptatem totam esse corporis nisi iste ut qui cumque! Aliquam molestias iure omnis, quisquam nesciunt repellendus. Repellendus similique assumenda maiores!"
+        introP.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam explicabo voluptatem totam esse corporis nisi iste ut qui cumque! Aliquam molestias iure omnis, quisquam nesciunt repellendus. Repellendus similique assumenda maiores! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus a, odit deserunt doloribus veniam placeat quisquam vel sequi repellendus repudiandae rem sint sit illum dolorem nemo quo nostrum commodi accusantium!"
     
     //change from div to img and add source after connecting via webpack
         const introImg = document.createElement('div')

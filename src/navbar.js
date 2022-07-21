@@ -1,3 +1,4 @@
+import { contactUs } from './contact.js';
 import { HOME, resetPage } from './home.js'
 import { homePage} from './home.js';
 import { menu } from './menu.js';
@@ -19,7 +20,7 @@ function navBar() {
     el.appendChild(contactlink);
     el.addEventListener("click", event => {
        if (event.target.matches('button')) {
-        let etarget = event.target;
+            let etarget = event.target;
             let elist = etarget.classList;
             console.log("Event Triggered " + elist );
          if (elist == 'home-nav') { 
@@ -33,7 +34,9 @@ function navBar() {
             menu();
           }
           if (elist == 'contact-nav') {
-            console.log("CONTACT US PAGE");
+            resetPage()
+            navBar();
+            contactUs();
            }
     }
     })
