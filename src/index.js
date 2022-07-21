@@ -4,4 +4,5 @@ import { homePage } from "./home";
 
 navBar();
 homePage();
+
 console.log("Home Page Loaded");

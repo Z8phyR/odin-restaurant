@@ -1,5 +1,6 @@
-import { HOME } from './home.js'
+import { HOME, resetPage } from './home.js'
 import { homePage} from './home.js';
+import { menu } from './menu.js';
 
 function navBar() {
     const el = document.createElement('div');
@@ -16,22 +17,30 @@ function navBar() {
     el.appendChild(homelink);
     el.appendChild(menulink);
     el.appendChild(contactlink);
-    el.addEventListener("click",event => {
+    el.addEventListener("click", event => {
+       if (event.target.matches('button')) {
         let etarget = event.target;
-        let elist = etarget.classList;
-            console.log("Event Triggered " + etarget.classList );
-        if (elist == 'home-nav') {
+            let elist = etarget.classList;
+            console.log("Event Triggered " + elist );
+         if (elist == 'home-nav') { 
+            resetPage();
+            navBar();
             homePage();
-        }
-        if (elist == 'menu-nav') {
-            console.log("GO TO THE MENU");
-        }
-        if (elist == 'contact-nav') {
+           }
+          if (elist == 'menu-nav') { 
+            resetPage()
+            navBar();
+            menu();
+          }
+          if (elist == 'contact-nav') {
             console.log("CONTACT US PAGE");
-        }
+           }
+    }
     })
     HOME.appendChild(el);
 }
+const navClass = document.querySelector('#nav-bar');
 
+export { navClass };
 export { navBar };
 
